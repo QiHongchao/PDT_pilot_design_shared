@@ -1,0 +1,10 @@
+## Power analysis of the PDT pilot
+**Author: Hongchao Qi**
+
+A pilot trial is being design to evaluate the feasiblity of the new [stratified PDT strategy](https://onlinelibrary.wiley.com/doi/10.1111/trf.18165) and to inform the potential national rollout.
+
+There will be two arms in the trial, i.e., current strategy as the control and strategy C as the intervention. Primary outcome of the trial is the percentage of under-threshold donations in each arm (the safey parameter). The basic design is stepped wedge where the new strategy will be gradually implemented (rolling out) in all the participating donation centres. It is also a **non-inferiority** trial as we want to investigate if the new strategy is non-inferior to the current strategy in terms of percentage of under-threshold donations (i.e., the percentage is not substantially higher in the new strategy). Therefore, the trial has a very unique **non-inferiority stepped wedge design**. Slides that explain the trial design can be found in `/Pilot_design/PDT power analysis_202509.pptx`.
+
+Note that NHSBT has decided to keep copper sulphate test for on-session tests and use additional **venous** HemoCue if the copper sulphate test fails, which is the old approach before the [COMPARE](https://onlinelibrary.wiley.com/doi/10.1111/tme.12750) study. Therefore, percentages of under-threshold donations used in the power analysis are not readily available in our publication. The precentages were derived from new simulations, and codes can be found in the `/Codes_simulation` folder.
+
+Codes for power analysis were adopted from [Gianluca Baio's](https://gianluca.statistica.it/software/swsamp/) simulation-based codes for stepped wedge trials. I made some changes to his codes to account for the additional non-inferiority design. The codes can be found in the `/Codes_poweranalysis` folder.
